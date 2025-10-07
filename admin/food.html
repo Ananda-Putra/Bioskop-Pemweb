@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Management Makanan & Minuman - CinemaGo</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-left">
+      <img src="../asset/" alt="Logo" style="width:40px;">
+      <h2 class="cinemago"><span class="cinema">Cinema</span><span class="go">Go</span></h2>
+    </div>
+    <div class="navbar-right">
+      <a href="admin.html">Back</a>
+    </div>
+  </header>
+
+  <div class="admin-container">
+    <h2>Manajemen Data Makanan & Minuman</h2>
+    <form>
+      <input type="text" placeholder="Nama Item" required>
+      <input type="text" placeholder="Jenis (Makanan / Minuman)" required>
+      <input type="number" placeholder="Harga (Rp)" required>
+      <button type="submit">Tambah Item</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama Item</th>
+          <th>Jenis</th>
+          <th>Harga</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Popcorn</td>
+          <td>Makanan</td>
+          <td>25000</td>
+          <td>
+            <button class="action-btn edit">Edit</button>
+            <button class="action-btn delete">Hapus</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 CinemaGo. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
